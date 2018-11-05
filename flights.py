@@ -4,7 +4,7 @@ import signal
 import errno
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(('10.0.1.15', 30003))
+s.connect(('localhost', 30003))
 s.sendall('Hello, world')
 
 # Catches SIGINT and SIGTERM and closes connections
