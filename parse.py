@@ -3,7 +3,7 @@ import json
 import time
 from geojson import LineString, Feature, FeatureCollection
 
-conn = sqlite3.connect('flights.db')
+conn = sqlite3.connect('/home/pi/flights/flights.db')
 c = conn.cursor()
 
 myFeatures = []
