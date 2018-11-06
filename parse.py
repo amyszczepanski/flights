@@ -65,11 +65,11 @@ for hexcode in allHexcodes:
 myGeoJSON = FeatureCollection(featureList)
 
 # One copy to archive; one copy to be overwritten
-timestr = time.strftime("/home/pi/flights/flights_%Y%m%d")
+timestr = time.strftime("/home/pi/flights/data/flights_%Y%m%d")
 myFilename = timestr + '.json'
 with open(myFilename, 'w') as outfile:
     json.dump(myGeoJSON, outfile)
-with open('/home/pi/flights/flights_today.json', 'w') as outfile:
+with open('/home/pi/flights/data/flights_today.json', 'w') as outfile:
     json.dump(myGeoJSON, outfile)
 
 conn.close()
