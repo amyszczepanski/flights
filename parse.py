@@ -8,14 +8,6 @@ c = conn.cursor()
 
 myFeatures = []
 
-# Find the offset of the first flight of the "day"
-c.execute(" \
-SELECT strftime('%s', MIN(DATETIME(observed))) - strftime('%s', MIN(DATE(observed)))  \
-AS day_offset \
-FROM positions \
-WHERE observed >= DATE('NOW', '-1 day'); \
-")
-dayOffset = c.fetchone()[0]
 
 # Now find the collection of hexcodes for the day
 c.execute(" \
