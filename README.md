@@ -11,6 +11,7 @@ sudo apt-get install sqlite3
 sudo apt-get install python-pip
 sudo pip install geojson
 sudo apt-get install git
+pip install awscli --upgrade --user
 ```
 
 ## Creating the sqlite3 database flights.db
