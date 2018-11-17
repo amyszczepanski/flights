@@ -24,3 +24,8 @@ CREATE TABLE positions (
     longitude NUMERIC,
     );
 ```
+
+## Adding AWS CLI to my path
+```
+export PATH=~/.local/bin:$PATH
+```
