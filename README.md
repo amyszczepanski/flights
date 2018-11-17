@@ -25,7 +25,9 @@ CREATE TABLE positions (
     );
 ```
 
-## Adding AWS CLI to my path
+## Setting up AWS CLI
 ```
 export PATH=~/.local/bin:$PATH
+source ~/.profile
+aws configure
 ```
