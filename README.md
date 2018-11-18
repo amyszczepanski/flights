@@ -4,7 +4,7 @@ tracking local flights with my piaware
 Here's an explanation of how I made this. If you want to use this with your own 
 [piaware](https://flightaware.com/adsb/), you'll need to change various things 
 that I've hardcoded (such as the longitude/latitude bounding box for San Diego 
-County, etc.). This comes in two parts: The scripts that run on the piaware to 
+County, etc.). The visualization has two parts: The scripts that run on the piaware to 
 collect and organize the data, and the web page that displays the data.
 
 There is a Python script that reads the information that comes out of dump1090 and
